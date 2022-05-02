@@ -1,0 +1,101 @@
+/* for input type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+@font-face {
+    font-family: "B koodak Bold";
+    src: url('../font/B\ Koodak\ Bold.ttf');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    background-color: #EAEAEA;
+    font-family: "B koodak Bold";
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+}
+
+.title {
+    font-size: 23px;
+    line-height: 40px;
+    color: #606060;
+    margin: 0;
+}
+
+.content {
+    height: 130px;
+    text-align: center;
+    margin-bottom: 30px;
+    direction: ltr;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-box::after {
+    content: '';
+    height: 10px;
+    width: 100%;
+    background-color: #FFD500;
+    display: block;
+    border-radius: 50px;
+}
+
+.input {
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #FF00A3;
+    border: none;
+    background-color: #EAEAEA;
+    outline: none;
+    font-family: Arial Rounded MT;
+    -webkit-appearance: none;
+    /*inputin firefox*/
+    appearance: textfield;
+}
+
+.btn-verified {
+    padding: 3px 30px;
+    font-size: 20px;
+    background-color: #14B103;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "B koodak Bold";
+}
+
+.btn-verified:hover {
+    background-color: #13a004;
+}
+
+.links a {
+    font-size: 18px;
+    color: #0023FF;
+    display: block;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.links a:hover {
+    color: #041dc5;
+}
